@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="otp-box" id="otpBox">
+            <h2>OTP Verification</h2>
+            <button id="getOtp">Get OTP</button>
+            <p id="otp-display"></p>
+            <p>Please enter the OTP sent to your mobile:</p>
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" class="otp-field"/>
+                <input type="text" maxlength="1" class="otp-field"/>
+                <input type="text" maxlength="1" class="otp-field"/>
+                <input type="text" maxlength="1" class="otp-field"/>
+            </div>
+            <button id="submitOtp">Submit</button>
+            <p id="error-message" class="error"></p>
+        </div>
+        <div class="home-page" id="homePage" style="display: none;">
+            <h1>Welcome to the Home Page!</h1>
+            <p>You have successfully verified your OTP.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
